@@ -1,0 +1,9 @@
+version: "3"
+services:
+    build-env:
+        build: .
+        image: dh-cpp-build-env
+        volumes:
+            - ./code:/home/user/deephaven
+        network_mode: "host"
+        tty: true
